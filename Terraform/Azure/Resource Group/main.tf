@@ -1,3 +1,4 @@
+# Maaritellaan Provider
 provider "azurerm" {
   features {}
 }
