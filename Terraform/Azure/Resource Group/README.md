@@ -1,0 +1,2 @@
+# Terraform to Azure training
+ 
