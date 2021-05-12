@@ -1,4 +1,3 @@
-# Maaritellaan PASI
 provider "azurerm" {
   features {}
 }
