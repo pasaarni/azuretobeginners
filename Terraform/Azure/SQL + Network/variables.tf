@@ -42,5 +42,3 @@ variable "network_group_name" {
     type        = string
     description = "NG name in Azure"
 }
-
-# PASI TESTAA
