@@ -1,4 +1,3 @@
-# Pasin testi
 # With this template i create a resourse group, where is virtual network and a one SQL-server on it.
 
 # Define Terraform version and source
