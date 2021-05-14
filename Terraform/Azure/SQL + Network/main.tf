@@ -15,7 +15,6 @@ resource "azurerm_resource_group" "vnetsql01-test" {
   }
 }
 
-
 # Create virtual network to resource group
 resource "azurerm_virtual_network" "network" {
   name                = var.network_group_name
