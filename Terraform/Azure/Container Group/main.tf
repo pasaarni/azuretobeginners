@@ -1,3 +1,5 @@
+# Create by pasaarni 14.5.2021
+
 resource "azurerm_resource_group" "cont-pa140521" {
   name     = "esmeporukka1"
   location = "North Europe"
