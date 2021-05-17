@@ -40,3 +40,5 @@ resource "azurerm_container_group" "tprod1contnew" {
     environment = "testing3"
   }
 }
+
+# Final line
