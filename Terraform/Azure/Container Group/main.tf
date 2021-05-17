@@ -1,4 +1,8 @@
-# Create by pasaarni 14.5.2021
+# Create by pasaarni 17.5.2021
+
+provider "azurerm" {
+  features {}
+}
 
 resource "azurerm_resource_group" "cont-pa170521" {
   name     = "resurssi1"
@@ -10,11 +14,11 @@ resource "azurerm_container_group" "tprod1contnew" {
   location            = azurerm_resource_group.cont-pa170521.location
   resource_group_name = azurerm_resource_group.cont-pa170521.name
   ip_address_type     = "public"
-  dns_name_label      = "aci-label"
+  dns_name_label      = "paci-label"
   os_type             = "Linux"
 
   container {
-    name   = "hello-world"
+    name   = "hello-world3"
     image  = "microsoft/aci-helloworld:latest"
     cpu    = "0.5"
     memory = "1.5"
@@ -26,13 +30,13 @@ resource "azurerm_container_group" "tprod1contnew" {
   }
 
   container {
-    name   = "sidecar"
+    name   = "sidecar3"
     image  = "microsoft/aci-tutorial-sidecar"
     cpu    = "0.5"
     memory = "1.5"
   }
 
   tags = {
-    environment = "testing"
+    environment = "testing3"
   }
 }
