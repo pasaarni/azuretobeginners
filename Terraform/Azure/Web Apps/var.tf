@@ -43,3 +43,22 @@ variable private_dns_zone_name {
     description = "Private DNS Zone name"
 }
 
+variable private_dns_zone_vnet_link {
+    type = string
+    description = "Private DNS Zone Vnet Link name"
+}
+
+variable private_dns_zone_group_name {
+    type = string
+    description = "Private DNS group name"
+}
+
+variable private_service_connection_name {
+    type = string
+    description = "Private Service Connection name"
+}
+
+variable private_dns_zone_vnet_name {
+    type = string
+    description = "Private DNS Zone Vnet Name"
+}
